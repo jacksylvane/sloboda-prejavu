@@ -1,0 +1,47 @@
+<app-navbar></app-navbar>
+<app-main-text></app-main-text>
+<div class="text-block">
+  <p>
+    V internetovom priestore sa denne stretávame s názormi, že sloboda prejavu je bezhraničné právo vyjadriť sa.
+    Akákoľvek
+    snaha o rozumné zadefinovanie pravidiel hry je vnímaná ako cenzúra, snaha umlčať či zlyhanie demokracie.
+    Informovanosť
+    o
+    tomto ústavnom práve je v občianskej spoločnosti iba základná. Cieľom projektu slobodaprejavu.sk je zvýšiť právne
+    povedomie širokej verejnosti, kultivovať diskusiu na internete a vyvrátiť mylné predstavy o obsahu a rozsahu práva
+    slobodne sa prejavit. Vysvetlíme ti aký má sloboda prejavu obsah a hranice, tvoje práva a povinnosti, či spôsoby,
+    ktorými sa môžeš brániť proti excesívnemu prejavu.
+  </p>
+  <p>
+    Mýty vs. fakty? Scrolluj dolu a dozvieš sa viac.
+  </p>
+</div>
+<div *ngFor="let message of messages">
+  <app-message [message]="message"></app-message>
+</div>
+<div class="text-block">
+  <h2>Čo môžeš spraviť?</h2>
+  <p>
+    Moderná občianska spoločnosť si je vedomá nie len svojich práv, ale aj povinností, ktoré z nich vyplývajú. Stačí
+    veľmi
+    málo a aj ty môžeš pomôcť zmene. Napríklad tým, že budeš svojmu okoliu povieš o našom projekte - nazdielaš ho na
+    svoju
+    sociálnu sieť, postneš jednotlivé fakty do emotívnej diskusie alebo ho len spomenieš kamošom, keď sa zas debata pri
+    kofole strhne debata podivným smerom.
+  </p>
+  <p>
+    Osvetové informácie, ktoré si už získal sú prvým krokom. Ak ťa téma zaujala, pripravili sme pre teba publikáciu,
+    ktorú
+    si môžeš zadarmo stiahnuť hneď tu. Nájdeš v nej kompletnú analýzu práva na slobodu prejavu, zaujímave súdne
+    rozhodnutia
+    či súčasné trendy, ktorými sa obsah slobody prejavu uberá.
+  </p>
+  <p>
+    Akúkoľvek myšlienku, spätnú väzbu, kritický či pochvalný komentár nám môžeš zanechať tu.
+  </p>
+  <div class="quote">
+    <p>"Moja sloboda sa končí tam, kde sa začína sloboda druhého."</p> - John Locke
+  </div>
+  <p>S priateľským pozdravom, Tvoj tím slobodaprejavu.sk</p>
+</div>
+<button (click)="toggleTheme()">Change Theme</button>
