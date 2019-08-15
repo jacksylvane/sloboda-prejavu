@@ -16,8 +16,9 @@
     Mýty vs. fakty? Scrolluj dolu a dozvieš sa viac.
   </p>
 </div>
-<div *ngFor="let message of messages">
-  <app-message [message]="message"></app-message>
+
+<div class="messages">
+  <app-message [message]="message" *ngFor="let message of messages"></app-message>
 </div>
 <div class="text-block">
   <h2>Čo môžeš spraviť?</h2>
