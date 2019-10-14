@@ -1,7 +1,23 @@
 .message
+  margin-bottom: 1.5rem
+  border: 3px solid #4d4d4d
+  padding: 1rem
   .myth
+    display: inline-flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    p
+      font-style: italic
     &:hover
       cursor: pointer
+  .arrow
+    background-image: url("src/assets/small-arrow.svg")
+    height: 1rem
+    width: 1rem
+    transition: 300ms all ease-in
+    &.shown
+      transform: rotate(180deg)   
   .truth
     text-indent: 1rem
     margin-left: 1rem

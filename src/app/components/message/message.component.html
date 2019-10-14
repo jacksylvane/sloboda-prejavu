@@ -1,7 +1,10 @@
 <div class="message">
-  <p class="myth" (click)="toggleTruth()">
-    {{message.myth}}
-  </p>
+  <div class="myth" (click)="toggleTruth()">
+    <p>
+      {{message.myth}}
+    </p>
+    <div class="arrow" [class.shown]="showTruth"></div>
+  </div>
   <p class="truth" *ngIf="showTruth">
     {{message.truth}}
   </p>

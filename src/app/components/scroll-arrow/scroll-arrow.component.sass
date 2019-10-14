@@ -1,0 +1,18 @@
+.arrow
+  background-image: url("src/assets/arrow.svg")
+  width: 1.15rem
+  height: 1.15rem
+  position: absolute
+  // bottom: 1.5rem
+  left: 50%
+  transform: translateX(-50%)
+  animation: MoveUpDown 1.25s linear infinite
+  &:hover
+    cursor: pointer
+
+@keyframes MoveUpDown
+  0%, 100%
+    bottom: 0.75rem
+
+  50%
+    bottom: 1.25rem

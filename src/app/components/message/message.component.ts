@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./message.component.sass']
 })
 export class MessageComponent implements OnInit {
-  @Input() message: string;
+  @Input() message: any;
   showTruth = false;
   constructor() { }
 

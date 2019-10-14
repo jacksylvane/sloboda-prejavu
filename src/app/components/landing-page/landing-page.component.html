@@ -1,6 +1,8 @@
 <app-navbar></app-navbar>
 <app-main-text></app-main-text>
-<div class="text-block">
+
+<app-scroll-arrow [target]="target"></app-scroll-arrow>
+<div class="text-block" #target>
   <p>
     V internetovom priestore sa denne stretávame s názormi, že sloboda prejavu je bezhraničné právo vyjadriť sa.
     Akákoľvek
@@ -17,10 +19,10 @@
   </p>
 </div>
 
-<div class="messages">
+<div class="messages" id="myths">
   <app-message [message]="message" *ngFor="let message of messages"></app-message>
 </div>
-<div class="text-block">
+<div class="text-block" id="your-help">
   <h2>Čo môžeš spraviť?</h2>
   <p>
     Moderná občianska spoločnosť si je vedomá nie len svojich práv, ale aj povinností, ktoré z nich vyplývajú. Stačí
@@ -41,8 +43,8 @@
     Akúkoľvek myšlienku, spätnú väzbu, kritický či pochvalný komentár nám môžeš zanechať tu.
   </p>
   <div class="quote">
-    <p>"Moja sloboda sa končí tam, kde sa začína sloboda druhého."</p> - John Locke
+    <p>"Moja sloboda sa končí tam, kde sa začína sloboda druhého."</p><span>- John Locke</span>
   </div>
   <p>S priateľským pozdravom, Tvoj tím slobodaprejavu.sk</p>
 </div>
-<button (click)="toggleTheme()">Change Theme</button>
+<!-- <button (click)="toggleTheme()">Change Theme</button> -->

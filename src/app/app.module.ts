@@ -10,6 +10,7 @@ import { MessageComponent } from './components/message/message.component';
 import { HttpClientModule } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
+import { ScrollArrowComponent } from './components/scroll-arrow/scroll-arrow.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AngularFireModule } from '@angular/fire';
     LandingPageComponent,
     NavbarComponent,
     MainTextComponent,
-    MessageComponent
+    MessageComponent,
+    ScrollArrowComponent
   ],
   imports: [
     BrowserModule,
