@@ -10,6 +10,7 @@ import { Message } from '../../models/message';
 export class LandingPageComponent implements OnInit {
   messages: Message[] = [];
   currentTheme = 'light';
+  expandedIndex;
   constructor(messageService: MessagesService) {
     messageService.getJSON().subscribe(data => {
       this.messages = data;
@@ -38,6 +39,10 @@ export class LandingPageComponent implements OnInit {
     document.documentElement.style.setProperty('--primary', '#faf7f7');
     document.documentElement.style.setProperty('--secondary', '#262626');
     document.documentElement.style.setProperty('--light', '#4D4D4D');
+  }
+
+  changeIndex(index: number): void {
+    this.expandedIndex = index;
   }
 
 }

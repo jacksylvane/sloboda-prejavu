@@ -20,7 +20,8 @@
 </div>
 
 <div class="messages" id="myths">
-  <app-message [message]="message" *ngFor="let message of messages"></app-message>
+  <app-message [message]="message" *ngFor="let message of messages; let i = index;" (showingTruth)="changeIndex(i)"
+    [showTruth]="expandedIndex === i"></app-message>
 </div>
 <div class="text-block" id="your-help">
   <h2>Čo môžeš spraviť?</h2>

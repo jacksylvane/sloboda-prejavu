@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-message',
@@ -7,13 +7,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MessageComponent implements OnInit {
   @Input() message: any;
-  showTruth = false;
+  @Input() showTruth = false;
+  @Output() showingTruth: EventEmitter<any> = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
   }
 
   toggleTruth(): void {
+    if (!this.showTruth) {
+      this.showingTruth.emit();
+    }
     this.showTruth = !this.showTruth;
   }
 }
