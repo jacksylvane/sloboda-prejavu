@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-const NEGATIVE_WORDS = ['NENÁVISŤ', 'ZLO', 'KLAMSTVO'];
+const NEGATIVE_WORDS = [
+  'NENÁVISŤ', 'ABSOLÚTNA', 'HEJT', 'BEZHRANIČNÁ', 'BEZ PRAVIDIEL', 'VLASTNÁ PRAVDA', 'HOLUBNÍK', 'ŠÍRENIE HOAXOV', 'RASIZMUS', 'KLAMSTVO'];
 @Component({
   selector: 'app-main-text',
   templateUrl: './main-text.component.html',
